@@ -1,0 +1,26 @@
+header, footer{
+    /* formatara os dois seletores*/
+    padding: 2rem;
+    margin: 2rem 0 ;
+    background-color: cadetblue;
+    text-align: center;
+}
+main{
+    display: flex;
+    gap: 1rem; /* ESPAÇAMENTO ENTRE ELES */
+    justify-content: center; /* ESPAÇAMENTO DIFERENCIADO ENTRE ELES */
+    /*
+        center: ficam todos no centro
+        space-between: ficam distribuidos no espaço disponivel
+    */
+    flex-wrap: wrap ; /* permite que os cards fiquem em varias linhas */
+}
+main > section{
+    /* o sinal de maior de ">" formatara o filho direto da marcação */
+    width: 20rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+
+    padding: 2rem;
+    box-shadow: 0 0 0.5rem 0.5rem rgb(236, 236, 236);
+}
