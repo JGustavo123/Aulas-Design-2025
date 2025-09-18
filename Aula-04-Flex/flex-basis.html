@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-basis</title>
+    <style>
+        section{
+            border: 1px solid black;
+            padding: 1rem;
+            margin: 2rem;
+            display: flex;
+            gap: 1rem; /*espaçamento entre os elementos do container */
+            flex-wrap: wrap; /* para conseguir tem que colocar wrap */
+        }
+        section > h2{
+            flex-basis: 100%; /* a largura do elemento */
+            background-color: rgb(203, 214, 224);
+            padding: 1rem;
+        }
+        section > div{
+            background-color: aliceblue;
+            padding: 1rem;
+            flex-basis: 20rem;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <!-- Regra de sintaxe: a marcação de section precisa de um titulo -->
+            <h2>Noticias</h2>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus totam vero tenetur amet et quo ut laboriosam corporis rem molestiae molestias quis distinctio recusandae sapiente tempora numquam, assumenda dignissimos nulla?</p>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus totam vero tenetur amet et quo ut laboriosam corporis rem molestiae molestias quis distinctio recusandae sapiente tempora numquam, assumenda dignissimos nulla?</p>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus totam vero tenetur amet et quo ut laboriosam corporis rem molestiae molestias quis distinctio recusandae sapiente tempora numquam, assumenda dignissimos nulla?</p>
+            </div>
+            
+        </section>
+    </main>
+</body>
+</html>
