@@ -1,0 +1,41 @@
+main{
+    max-width: 70rem;
+    margin: 1rem auto;
+    display: grid;
+
+    gap: 1rem; 
+    /* define o espaçamento entre as areas */
+
+    grid-template-rows: 10rem 10rem ; 
+    /* define a altura das linhas, porem cuidado!! */   /*  */
+
+    grid-template-columns: 1fr 2fr 1fr; 
+    /* fr unidade de fração. tambem da pra usar as outras unidades*/ 
+    /*grid-template-columns define a largura  da coluna */ 
+    /* a quantidade de valores deve ser igual a de colunas */
+
+    grid-template-areas: 
+    "c b d"
+    "a a d"
+    ;
+    /* 
+    não pode ser so numero, não pode começar com numero, não pode ser na diagonal, não pode a ver espaço  
+    */
+}
+section{
+    border: 1px solid black;
+    padding: 1rem;
+    overflow: auto; /* Possibilita a barra de rolagem */
+}
+section.noticias{
+    grid-area: a; /* definir area */
+}
+section.comemoracao{
+    grid-area: b;
+}
+section.organizadores{
+    grid-area: c;
+}
+section.corrida{
+    grid-area: d;
+}

@@ -1,0 +1,31 @@
+main{
+    max-width: 70rem;
+    margin: 1rem auto;
+    display: grid;
+
+    grid-template-areas: 
+    "a b b c"
+    "a b b d"
+    "e e e e"
+    ;
+}
+section{
+    border: 1px solid black;
+    padding: 1rem;
+    overflow: auto; /* Possibilita a barra de rolagem */
+}
+section.a{
+    grid-area: a; /* definir area */
+}
+section.b{
+    grid-area: b;
+}
+section.c{
+    grid-area: c;
+}
+section.d{
+    grid-area: d;
+}
+section.e{
+    grid-area: e;
+}
