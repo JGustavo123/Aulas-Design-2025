@@ -1,7 +1,9 @@
 main{
     max-width: 70rem;
     margin: 1rem auto;
+    gap: 1rem;
     display: grid;
+
 
     grid-template-areas: 
     "a b b c"
@@ -11,8 +13,9 @@ main{
 }
 section{
     border: 1px solid black;
+    background-color: cadetblue;
     padding: 1rem;
-    overflow: auto; /* Possibilita a barra de rolagem */
+
 }
 section.a{
     grid-area: a; /* definir area */
