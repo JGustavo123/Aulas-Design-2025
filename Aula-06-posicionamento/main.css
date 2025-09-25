@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    position: fixed;
+    /* o position fixed deixa a marcação FIXA na usa posição, a marcação "perde" a largura 
+    muda o comportamento para display: inline-block*/
+    width: 100vw;
+    top: 0;
+}
+header, footer, section{
+    padding: 2rem;
+    margin: 0 0 2rem 0;
+    background-color: lightcyan;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 0.8rem;
+}
+main{
+    margin-top: 10rem; /* como o header ficou sobreposto, o main precisa ter um espaçamaneto em cima */
+}
+header, footer{
+    background-color: lightskyblue;
+    text-align: center;
+}
+div#banner{
+    background-color: lime;
+    padding: 2rem;
+    width: 20rem;
+    height: 20rem;
+    position: absolute; /* o posicionamento absoluto permite que o elemento fique sobreposto
+    diferentemente do FIXED ele ira seguir a rolagem */
+    /* top; ;
+    left: ;
+    right: ;
+    bottom: ; */
+    /* As coordenadas irão posicionar o elemento, escolher apenas 2: eixo x e eixo y.
+    ao trabalhar com posicionamento NÃO se trabalhar com MARGIN!!! */
+
+    z-index: 3;/* equivale ao eixo Z. recebe um valor inteiro que representa sua 
+    ordem de camadas/sequencia... */
+}
+div#esmaecer{
+    background-color: rgba(0, 0, 0, 0.7);
+    /* rgba:  */
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed; /* PARA FICAR NA FRENTE DO HEADER E ATRAS DO BANNER */
+    justify-content: center; /* alinhamento HORIZONTAL */
+    align-items: center; /* alinhamento VERTICAL */
+    z-index: 2;
+    display: flex;
+}
+h2{
+    position: relative; /* permite as definiçõe de coordenadas e não perde espaço no html */
+    top: 10px;
+    font-size: 5rem;
+}
