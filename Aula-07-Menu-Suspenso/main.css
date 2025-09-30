@@ -1,0 +1,35 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+li{
+    list-style-type: none;
+}
+ol > li{
+    display: inline;
+    position: relative;
+}
+ol li > a{
+    display: inline-block;
+    background-color: darkturquoise;
+    text-decoration: none;
+    padding: 1rem;
+    vertical-align: middle;
+    /* alinhamento vertical entre o texto e a imagem */
+    height: 1.5rem;
+}
+li>ul{
+    position: absolute;
+    padding: 1rem;
+    background-color: darkturquoise;
+    top: 20px;
+    left: 0;
+    /* por padrão as coordenadas são em relação ao body 
+    porem se o elemento pai tiver um position relative ele ficara em relação a posição do pai*/
+    visibility: hidden;
+    /* por padrão o sub-menu ficara escondido */
+}
+li:hover ul{
+    /* quando passar o mouse no LI o UL que esta dentro do LI ficara visivel */
+    visibility: visible;
+
+}
