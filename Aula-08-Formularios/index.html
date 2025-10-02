@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição para viagem de campo</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <h1>Inscrição para viagem de campo</h1>
+    <form action="dadosenviados.html">
+        <label for="nome">*Nome: </label> <!-- serve para chamar um arquivo de back end-->
+        <input type="text" placeholder="Nome" required id="nome"> <!-- o for tem que ser o mesmo valor que esta dentro do id -->
+        <br>
+        <label for="email">E-mail: </label>
+        <input type="email" id="email">
+        <br>
+        <label for="curso">Curso: </label>
+        <select name="curso" id="curso"> <!-- comba box é um componente que vai receber varios valores pra o cliente selcionar por exemplo: dia, mes, ano, cidade... -->
+            <option value="info">INFOWEB</option>
+            <option value="adm" selected>Administração</option><!-- -->
+            <option value="msi">Manutenção e Suporte</option>
+        </select>
+        <br>
+        <label for="nee">Necessidade especifica:</label>
+        <input type="text" list="list-nee" id="nee">
+        <datalist id="list-nee">
+            <option value="Autismo"></option>
+            <option value="TDAH"></option>
+            <option value="Restrição alimentar"></option>
+        </datalist>
+        <br>
+        <div class="periodo">
+            <label><input type="radio" name="periodo" value="ano1">
+                1o ano
+            </label>
+            <label><input type="radio" name="periodo" value="ano2">
+                <!-- o radio só permite selecionar 1, o name cria 
+                 o grupo e value é o valor que vai para a programção -->
+                2o ano
+            </label>
+            <label><input type="radio" name="periodo" value="ano3">
+                3o ano
+            </label>
+            <label><input type="radio" name="periodo" value="ano4">
+                4o ano
+            </label>
+        </div>
+        <label for="obs">Observações: </label>
+        <textarea name="Observações" maxlength="300" id="obs" cols="30" rows="10"></textarea>
+
+        <br>
+        <input type="submit" value="ENVIAR">
+
+        <!--
+        <button type="submit">ENVIAR</button> 
+        pra cada tag de formulario tem que ter um input submit
+        ele pode ser usado fora da tag de form
+        -->
+
+    </form>
+</body>
+</html>
