@@ -1,0 +1,75 @@
+main{
+    font-family: 'Roboto Mono', monospace;
+    display: grid;
+
+    gap: 0.25rem; 
+    /* define o espaçamento entre as areas */
+
+   
+
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    /* fr unidade de fração. tambem da pra usar as outras unidades*/ 
+    /*grid-template-columns define a largura  da coluna */ 
+    /* a quantidade de valores deve ser igual a de colunas */
+
+    grid-template-areas: 
+    "k k k k k"
+    "a b e e i"
+    "a c f g j"
+    "a d f h h"
+    "l l l l l"
+    ;
+}
+section{
+
+    background-color: cadetblue;
+    padding: 1rem;
+
+}
+section.a{
+    grid-area: a; /* definir area */
+}
+section.b{
+    grid-area: b;
+}
+section.c{
+    grid-area: c;
+}
+section.d{
+    grid-area: d;
+    display: flex;
+    padding: 0;
+}
+section.d img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ocupa toda section sem distorcer */
+}
+section.e{
+    grid-area: e;
+}
+section.f{
+    grid-area: f;
+}
+section.g{
+    grid-area: g;
+    
+}
+section.h{
+    grid-area: h;
+}
+section.i{
+    grid-area: i;
+}
+section.j{
+    grid-area: j;
+}
+section.k{
+    grid-area: k;
+    background-color: #224459;
+    background: linear-gradient(to left, #7292A6, #224459);
+}
+section.l{
+    grid-area: l;
+    background-color:#224459;
+}
