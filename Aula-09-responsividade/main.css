@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    /*  */
+}
+main{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap; /* é necessario usar o flex-wrap pra quebrar */
+}
+section{
+    border: 1px solid black;
+    padding: 1rem;
+    flex-basis: 20%;
+}
+/* responsividade com media screen: */
+@media (max-width:1440px){
+    body{
+        background-color: burlywood;        
+    }
+    section{
+        flex-basis: 45%;
+    }
+}
+@media (max-width:744px){
+    body{
+        background-color: rgb(38, 231, 183);
+    }
+    section{
+        flex-basis: 90%;
+    }
+}

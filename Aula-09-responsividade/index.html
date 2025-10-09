@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <!-- Isso aqui é um arquivo de configuração da pagina e esta configurando a largura do dispositivo, auxiliando na responsividade -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halloween</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>Halloween CNAT 2025</h1>
+
+    </header>
+    <div id="destaque">
+        <!-- 
+            1- tag para responsividade de imagens
+            2- marcação de source maiores em cima - podem ter varias marcaçõesde source
+            3- pode ser colocada em h1, lista...
+            4- a largura precisa estar relacionada com a largura da "imagem"
+        -->
+        <picture>
+            <source srcset="destaque-web.jpg" media="(min-width:1440px)" />
+            <source srcset="destaque-tablet.jpg" media="(min-width:744px)" />
+            <img src="destaque-mobile.jpg" alt="Imagem de destaque ... ">
+        </picture>
+    </div>
+    <main>
+        <section>
+            <h2>Organizadores</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt voluptates sed neque ab fugiat nesciunt architecto quasi assumenda rerum quidem totam cum aspernatur, velit vitae a distinctio, dignissimos laborum magni?</p>
+        </section>
+        <section>
+            <h2>Programação</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum temporibus fugiat porro saepe quae omnis nobis corrupti, suscipit, unde distinctio similique reprehenderit adipisci? Necessitatibus nemo natus inventore molestias voluptatibus maxime.</p>
+        </section>
+        <section>
+            <h2>Praça de alimentação</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, architecto, explicabo ullam rerum nihil sed cupiditate, possimus at enim officia officiis commodi vero. Beatae ex omnis nulla fuga at porro.</p>
+        </section>
+        <section>
+            <h2>Contato</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ipsa amet adipisci error aperiam corporis voluptatum sequi magnam pariatur quasi velit quaerat deleniti, possimus facere vel nostrum numquam odit nobis.</p>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido IFRN/CNAT/DIATINF/INFOWEB.</p>
+    </footer>
+</body>
+</html>
