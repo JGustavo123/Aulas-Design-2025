@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    /* seletor raiz que declara variaveis */
+    --cor-de-texto: gray;
+    --cor_de_plano_de_fundo: cornflowerblue;
+}
+/* DESIGN SYSTEM - sistema de padronização de formatação */
+body{
+    background-color: var(--cor_de_plano_de_fundo); /* utilização da variavel */
+    font-family: "Roboto Condensed", sans-serif;
+}
+*{
+    /* seleciona TODAS as marcações*/
+}
+p.destaque{
+    /* seleciona as marcações de p com o class igual a 'destaque' */
+}
+.destaque{
+    /*  */
+}
+section#principal{
+/**/
+}
+#principal{
+}
+.verde.tx-laranja{
+    /*seelciona a marcação que tem os dois valores no atributo de class 
+    'verde' e 'tx-laranja' 
+    <section class="verde tx-laranja"> ....</section>
+    */
+}
+.verde .tx-laranja{
+    /* seleciona as marcações que tem a class 'tx-laranja' que estão dentro da marcação com class 'verde' */
+}
+ol, ul{
+    /* formata ol e ul */
+}
+p > b {
+    /* formata a tag de b que esta imediatamente dentro do paragrafo */
+}
+h2 + p{
+    background-color: #fefefe;
+    /* formata o paragrafo que esta imediatamente depois do h2 */
+}
+p:hover{
+    /* é uma sub-classe do css que vai dar um efeito ao passar o mouse */
+}
+li:first-child{
+    /* seleciona o primeiro filho do conjunto 'por exemplo o primeiro LI' */
+}
+tr:last-child{
+    /**/
+}
+tr:nth-child( 2 ){
+    /* seleciona um cojunto especifico */
+    /* 
+    odd - numeros impares 
+    even - numeros pares 
+    numero inteiro 
+    */
+    /* substitui oque ta dentro dos parenteses 'é o conjunto' */
+}
+img[src='face.png']{
+/* seleciona a tag de imagem que tem src */
+}
+input[type='radio']{
+/*seleciona  alguma coisa não lembro kk que tem type radio */
+}
+label[for]{
+/* não deu tempo de escrever kkkk */
+}
