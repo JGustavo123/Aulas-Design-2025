@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(217, 240, 240) !important;
+    /* '!important' comando que aumenta a importancia de um determinado instancia */
+    background-color: blueviolet;
+}
+main{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+section{
+    width: 20rem;
+    height: 20rem;
+    border: 1px solid black;
+    padding: 2rem;
+    box-sizing: border-box;
+    /* transition
+    ele recebe varios valores👍 referentes ao transition
+    */
+    transition-property: border-radius, box-shadow;
+    /* 
+       - o atributo de transition  cria um atransição suave da tag de hover 
+       - o valor do transition equivale ao valor dos ... não deu tempode escrever tudo
+       'all' é o valor que representa a transição para TODOS os atributos do hover  
+    */
+    transition-duration: 0.3s;
+}
+section{
+    box-shadow: 0 0 10px 0 gray;
+    border-radius: 10px;
+}
