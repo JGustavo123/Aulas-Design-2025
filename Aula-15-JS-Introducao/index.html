@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Introdução</title>
+</head>
+<body>
+    <script>
+        // document.getElementById("mensagem").innerHTML = "Olá mundo com getElementByid"
+        // DOM - modelo de documento do objeto
+    </script>
+    <p id="mensagem"></p>
+    <script>
+        /*
+        - javascript não é java (linguagem de programação)
+        - javascript é linguagem de programção do lado do cliente, geralmente
+        - javascript é interpretada (diferente de executada)
+        - javascript é sensivel a capitulação 
+        - O desenvolvimento web é um tripe:
+            - htmlé a estrutura, conteúdo
+            - css é o estilo
+            - javascript é a interatividade, comportamentó...
+        - lado lado cliente, servidor, mobile e desktop
+        */ 
+    
+    window.alert("Olá mundo");
+    document.write("<p>Olá mundo com document write.</p>");
+    document.getElementById("mensagem").innerHTML = "Olá mundo com getElementByid"
+        // innerHTML - método quer ira incluir html no elemento com id ... 
+
+    console.log("Olá mundo no console");
+
+    // Variaveis
+    // No JS as variaveis Não são fortemente tipadas
+    // pode usar var, let ou const
+    // var - declaração global
+    // let - declaração local e mais agil para o sistema
+
+    let numint = 3;
+    let text = "INFOWEB";
+    let numfloat = 5.8;
+    let booleano = true;
+        // o mais concatena 
+    
+    console.log(numint+numfloat+text);
+    console.log(54-98);
+    console.log(54*98);
+    console.log(54/98);
+    console.log("Valor de numint: ")
+    console.log(numint);
+    console.log(++numint); // incrementa antes
+    console.log(numint++); // incrementa depois
+    console.log(numint);
+
+    // Operadores relacionais
+
+    console.log(4==7);
+    console.log(4!=7);
+    console.log(4<=7);
+    console.log(4>=7);
+    console.log(4==4 && 5<=2); // Se ambos forem true
+    console.log(4==5 || 10>5); // se um for true
+    console.log("===");
+    console.log("3" === 3);
+    console.log("==");
+    console.log("3" == 3);
+
+    let nome = window.prompt("Qual seu nome?:");
+    document.write(nome);
+
+    if(nome == "Dani"){
+        alert("Oi Dani");
+    }else{
+        alert("Você não é dani!");
+    }
+
+    </script>
+</body>
+</html>
