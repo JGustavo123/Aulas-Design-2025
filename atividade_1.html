@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>100 Botões</title>
+    <link rel="stylesheet" href="atividade_1.css">
+</head>
+
+<script>
+    function mudarFundo(r, g, b){
+        document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+    }
+
+    window.onload = function(){
+        for(let i = 0; i < 100; i++){
+            let r = Math.floor(Math.random() * 256);
+            let g = Math.floor(Math.random() * 256);
+            let b = Math.floor(Math.random() * 256);
+
+            document.body.innerHTML +=
+                `<button onclick="mudarFundo(${r},${g},${b})" 
+                style="background-color: rgb(${r},${g},${b})"></button>`;
+        }
+    }
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

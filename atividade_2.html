@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+    let lista = ["Samuel", "Russo", "Albino"];
+
+    function exibirLista(){
+        document.getElementById("paragrafo").innerHTML = lista.join("<br>");
+    }
+
+    window.onload = function(){
+        exibirLista();
+    }
+
+    function adicionarNome(){
+        let nomeNovo = document.getElementById("inputNome").value;
+
+        if(nomeNovo.trim() === ""){
+            alert("Digite um nome válido!");
+            return;
+        }
+
+        lista.push(nomeNovo);
+        exibirLista();
+        document.getElementById("inputNome").value = "";
+    }
+</script>
+
+<body>
+
+    <h2>Lista de Nomes</h2>
+
+    <label>Nome:</label>
+    <input type="text" id="inputNome">
+    <button onclick="adicionarNome()">Adicionar</button>
+
+    <p id="paragrafo"></p>
+
+</body>
+</html>
