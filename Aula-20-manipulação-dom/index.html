@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .destaque{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Erro de sintaxe: <p><span></p></scan> -->
+<span>SPAN 1</span>
+<p class="texto">DOM - Modelo de Objeto do documento <span>TEXTO NO SPAN 2</span> </p>
+
+<!-- SPAN: não tem valor semântico, marcação inline -->
+<p id="paragrafocomid"></p>
+
+<!-- é possivel criara atributos personalizados e existem prefixos para colocar com os atributos personalizados -->
+<ol quantidade=""10 data-produtos="8">
+    <li>item 1</li>
+    <li>item 2</li>
+    <li>item 3</li>
+</ol>
+<figure>
+    <img src="https://i.pinimg.com/736x/d7/66/52/d76652ec2e5ad8deee5da2a35f113a7f.jpg" alt="">
+</figure>
+
+<button class="trocarimagem">TROCAR IMAGEM</button>
+
+<script>
+    const pcomid = document.getElementById("paragrafocomid");
+    const pcomclass = document.querySelector(".texto span");
+
+    pcomclass.innerHTML = "<b>TEXTO</b> 2 PARA O SPAN!";
+    // document.querySelector(".texto span").style.background = "blue";
+    pcomclass.style.backgroundColor = "blue";
+    // a marcação precisa ter uma class para adicionar mais
+    document.querySelector(".texto").classList.add("destaque");
+    
+    document.getElementsByTagName("li")[0].style.color = "blue";
+    console.log("TOTAL DE LI´S: "+document.getElementsByTagName("li").length);
+
+    const imagem = document.querySelector("img");
+    console.log(imagem.getAttribute("src"));
+    // .setAttribute("src","novovalor");
+
+    const trocarimagem = document.querySelector(".trocarimagem");
+
+    function trocar(){}
+    const img1 = "d76652ec2e5ad8deee5da2a35f113a7f.jpg";
+    const img2 = "5b36a0c26853c75142ae9fe46e2c8ad2.jpg";
+
+    const atual = imagem.src; // URL completa carregada pelo navegador
+
+    if (atual.includes(img1)) {
+        imagem.src = "https://i.pinimg.com/736x/5b/36/a0/5b36a0c26853c75142ae9fe46e2c8ad2.jpg";
+    } else {
+        imagem.src = "https://i.pinimg.com/736x/d7/66/52/d76652ec2e5ad8deee5da2a35f113a7f.jpg";
+    }
+    // setInterval(trocar,1000)
+
+    trocarimagem.addEventListener("click",trocar);
+
+    const produtos = document.querySelector("ol");
+    console.log(produtos.getAttribute("quantidade")); // pega o valor do atributo
+    console.log(produtos.hasAttribute("quantidade")); // verifica se há o atributo
+    console.log(produtos.dataset.produtos); // pega o valor que esta em <ol data-produtos="">...
+
+    console.log(produtos.attributes);
+    produtos.removeAttribute("quantidade");
+    console.log(produtos.attributes);
+
+
+
+
+</script> 
+
+</body>
+</html>
